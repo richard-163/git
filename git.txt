@@ -1,0 +1,19 @@
+# 按照完成后设置用户名和邮箱
+$ git config --global user.name "richard"
+$ git config --global user.email "test@qq.com"
+
+#查看所有配置 $ git config --list
+
+# 初始化git仓库 $ git init
+
+#添加文件到git仓库，分两步
+$ git add <file>
+$ git commit -m <message>
+
+#查看工作区状态 $git status
+#查看修改内容 $git diff
+
+# 查看git提交日志记录 $ git log
+# 回退到上一版本 $ git reset --hard HEAD^
+# 回退到某个版本 $ git reset --hard 18690aa(commit id前几位)
+# 查看git命令日志记录 $ git reflog
