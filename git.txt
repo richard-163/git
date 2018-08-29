@@ -7,8 +7,8 @@ $ git config --global user.email "test@qq.com"
 # 初始化git仓库 $ git init
 
 #添加文件到git仓库，分两步
-$ git add <file> （将工作区的修改文件添加到暂存区）
-$ git commit -m <message> （将暂存区的修改文件添加到当前分支）
+$ git add <file> （将工作区的文件修改添加到暂存区）
+$ git commit -m <message> （将暂存区的所有内容添加到当前分支）
 
 #查看工作区状态 $git status
 #查看修改内容 $git diff
