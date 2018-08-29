@@ -7,8 +7,8 @@ $ git config --global user.email "test@qq.com"
 # 初始化git仓库 $ git init
 
 #添加文件到git仓库，分两步
-$ git add <file>
-$ git commit -m <message>
+$ git add <file> （将工作区的修改文件添加到暂存区）
+$ git commit -m <message> （将暂存区的修改文件添加到当前分支）
 
 #查看工作区状态 $git status
 #查看修改内容 $git diff
@@ -17,3 +17,5 @@ $ git commit -m <message>
 # 回退到上一版本 $ git reset --hard HEAD^
 # 回退到某个版本 $ git reset --hard 18690aa(commit id前几位)
 # 查看git命令日志记录 $ git reflog
+
+# Git的版本库里有一个称为stage（或者叫index）的暂存区，还有第一个分支master，以及指向master的一个HEAD指针
