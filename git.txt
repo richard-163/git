@@ -22,3 +22,28 @@ $ git commit -m <message> （将暂存区的所有内容添加到当前分支）
 
 # 撤销工作区的修改 $ git checkout -- file （让文件回到最近一次git commit或git add时的状态）
 # 撤销暂存区的修改 $ git reset HEAD <file> （把暂存区的修改回退到工作区）
+
+#从git仓库中删除文件，分两步：
+$ git delete <file>
+$ git commit -m <message>
+
+# 恢复删除的文件 
+1)直接从文件管理器删除，恢复命令：$ git checkout -- <file>
+2)通过git rm命令删除，恢复命令：git reset --hard "commit id"
+
+
+远程仓库
+# 在本地仓库添加一个远程仓库（远程库默认名为origin，也可自己命名）
+$ git remote add origin git@github.com:richard-163/repo-name.git
+# 将本地master分支跟踪到远程分支
+$ git push -u origin master
+
+#查看配置有哪些远程仓库
+$ git remote
+#查看具体某个远程仓库信息
+$ git remote show origin
+
+# 远程仓库克隆到本地（要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆。）
+$ git clone git@github.com:richard-163/gitskills.git
+
+# Git支持多种协议，默认的git://使用ssh，但也可以使用https等其他协议，但通过ssh支持的原生git协议速度最快。
