@@ -145,5 +145,3 @@ git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell
 第六步，克隆远程仓库：
 现在，可以通过git clone命令克隆远程仓库了，在各自的电脑上运行：
 $ git clone git@server:/srv/sample.git
-
-剩下的推送就简单了。
